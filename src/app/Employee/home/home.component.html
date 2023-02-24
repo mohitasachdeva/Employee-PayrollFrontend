@@ -1,0 +1,38 @@
+<app-header-page></app-header-page>
+<div class="main-content">
+    <div class="header-content">
+      <div class="emp-detail-text">
+       Employee Details <div class="emp-count">{{employeeCount}}</div>
+      </div>
+      <a class="add-button" routerLink="/form">
+        <img src="../assets/add-24px.svg" alt="">Add Employee</a>
+    </div> <!-- header-content-->
+    <div class="table-main">
+      <table id ="table-display" class="table">
+          <tr>
+              <th></th>
+              <th>Name</th>
+              <th>Gender</th>
+              <th>Department</th>
+              <th>Salary</th>
+              <th>Start Date</th>
+              <th>Actions</th>
+          </tr>
+          <tr>
+              <td>
+                  <img class="profile" src="../assets/profile-images/Ellipse -3.png" alt="">
+              </td>
+              <td>Mohita</td>
+              <td>Female</td>
+              <td>Finance</td>
+              <td>600000</td>
+              <td>12 feb 2023</td>
+              <td>
+                  <img  id=1 src="../assets/delete-black-18dp.svg" alt="delete"(click)="  deleteEmployee(employee)">
+                  &nbsp;
+                  <img id=1 src="../assets/create-black-18dp.svg" alt="edit"> 
+              </td>
+      
+      </table>  
+  </div>
+  </div>
